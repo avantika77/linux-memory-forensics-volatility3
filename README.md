@@ -42,8 +42,6 @@ These observations alone do not establish malicious activity.
 ## Limitations
 This was a beginner learning exercise using a historical public memory image. It was not a complete malware investigation or proof that the system was clean.
 
-No memory was acquired from my personal computer.
-
 ## Future Improvements
 - Investigate suspicious processes and parent-child relationships.
 - Explore additional Linux memory-forensics plugins.
