@@ -51,7 +51,6 @@ This was a beginner learning exercise using a historical public memory image. It
 
 
 
+AVANTIKA SHRIVASTAVA
 
-   AVANTIKA SHRIVASTAVA
-  
-   GitHub: https://github.com/avantika77/
+GitHub: https://github.com/avantika77/
