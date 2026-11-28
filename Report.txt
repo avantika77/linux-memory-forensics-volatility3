@@ -1,0 +1,59 @@
+
+Digital Forensics Investigation Report
+
+Case Information
+Case ID:LAB-002
+- Investigation Type:Linux Memory Forensics
+- Tool:Volatility 3
+- Evidence Source:Public Volatility Foundation training sample
+- Evidence Filename:'linux-sample-1.bin`
+- Evidence Size:512 MB
+- Target Operating System:Debian Linux
+- Kernel Banner:Linux 3.2.0-4-amd64
+- Investigation Date:24 November 2026
+
+Objective
+To examine a publicly available Linux memory image using Volatility 3 and identify processes, process relationships, socket information, and loaded kernel modules.
+
+Tools and Evidence
+- Linux virtual machine
+- Volatility 3 Framework 2.28.2
+- Public memory sample from the Volatility Foundation test-data repository
+- Matching Linux symbol file
+
+Only the downloaded public sample was analyzed. No memory was acquired from the investigator's computer, and no personal files were used as evidence.
+
+Analysis Performed
+
+ 1. Process List — `linux.pslist`
+Volatility successfully listed processes present in the memory image.
+
+2. Process Tree — `linux.pstree`
+The output included entries such as `flush-8:0` and `kworker` kernel worker threads.
+
+3. Socket Information — `linux.sockstat`
+The output included local AF_UNIX sockets associated with D-Bus, SSH, and sudo.
+
+4. Kernel Modules — `linux.lsmod`
+The output included `libata` and `scsi_mod`, which are Linux storage-related modules.
+
+Findings
+The examined output contained examples of normal Linux system activity, including kernel worker threads, local communication sockets, and storage-related kernel modules.
+
+These observations alone do not establish malicious activity or prove that the system was completely clean.
+
+Limitations
+This investigation used a historical public training memory image. Findings describe that sample, not the investigator's current computer.
+
+No definitive malware attribution or complete compromise assessment was performed.
+
+Conclusion
+The Linux memory image was successfully analyzed using Volatility 3. Four analysis plugins were used to examine processes, process relationships, sockets, and kernel modules.
+
+This exercise demonstrated basic Linux memory-forensics techniques.
+
+Analysis Output Files
+- `processes.txt`
+- `process_tree.txt`
+- `sockets.txt`
+- `modules.txt`
