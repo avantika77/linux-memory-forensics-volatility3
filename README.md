@@ -48,4 +48,7 @@ This was a beginner learning exercise using a historical public memory image. It
 - Correlate process and socket findings.
 - Improve evidence documentation and reporting.
 
-- AVANTIKA SHRIVASTAVA 
+
+   AVANTIKA SHRIVASTAVA
+  
+   GitHub: https://github.com/avantika77/
